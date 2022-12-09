@@ -1,5 +1,6 @@
 package lotto.Domain;
 
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 
@@ -36,5 +37,11 @@ public class Lotto {
         if (numbers.size() != new HashSet<>(numbers).size()) {
             throw new IllegalArgumentException("[ERROR] 로또 번호는 모두 달라야합니다.");
         }
+    }
+
+    @Override
+    public String toString() {
+        Collections.sort(numbers);
+        return numbers.toString();
     }
 }
