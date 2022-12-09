@@ -4,12 +4,12 @@ import java.util.List;
 
 public class WinningLotto {
     private Lotto winningNumbers;
-    private int bonusNumber;
+    private LottoNumber bonusNumber;
 
     public WinningLotto(List<Integer> numbers, int number) {
         validateBonusNumber(numbers, number);
         this.winningNumbers = new Lotto(numbers);
-        this.bonusNumber = number;
+        this.bonusNumber = new LottoNumber(number);
     }
 
     private void validateBonusNumber(List<Integer> numbers, int number) {
