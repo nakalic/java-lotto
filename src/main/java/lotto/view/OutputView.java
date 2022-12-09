@@ -16,4 +16,8 @@ public class OutputView {
     public void printPublishedLottoTickets(LottoTickets lottoTickets) {
         System.out.println(lottoTickets);
     }
+
+    public void printWinningNumber() {
+        System.out.println("당첨 번호를 입력해 주세요.");
+    }
 }
