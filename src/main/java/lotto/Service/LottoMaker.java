@@ -21,8 +21,8 @@ public class LottoMaker {
     }
 
     public Lotto makeWinningLotto(String input) {
-        return new Lotto(Stream.of(Console.readLine().split("\\s*,\\s*"))
-                .map(s -> Integer.parseInt(s))
+        return new Lotto(Stream.of(input.split("\\s*,\\s*"))
+                .map(Integer::parseInt)
                 .collect(Collectors.toList()));
     }
 
