@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 
 public class Lotto {
+    //List 안에 LottoNumber를 사용하고 싶음
     private final List<Integer> numbers;
 
     public Lotto(List<Integer> numbers) {
@@ -37,6 +38,10 @@ public class Lotto {
         if (numbers.size() != new HashSet<>(numbers).size()) {
             throw new IllegalArgumentException("[ERROR] 로또 번호는 모두 달라야합니다.");
         }
+    }
+
+    public List<Integer> getNumbers() {
+        return numbers;
     }
 
     @Override
