@@ -34,4 +34,10 @@ public class Money {
             throw new IllegalArgumentException("[ERROR] 구입 금액은 1,000으로 나누어 떨어져야 합니다.");
         }
     }
+
+    //어떻게 오버라이딩 할지 고민
+    @Override
+    public String toString() {
+        return Integer.toString(this.money / 1000);
+    }
 }
