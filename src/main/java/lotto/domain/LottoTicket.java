@@ -11,6 +11,10 @@ public class LottoTicket {
         lottos = publishNumbers;
     }
 
+    public List<Lotto> getLottos() {
+        return lottos;
+    }
+
     @Override
     public String toString() {
         return "LottoTicket{" +
