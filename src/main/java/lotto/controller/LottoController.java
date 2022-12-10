@@ -33,6 +33,5 @@ public class LottoController {
         outputView.printInformWinning();
         outputView.printWinningStatistic(hitService.getWinningStatistic());
         outputView.printYield(hitService.getYield());
-
     }
 }

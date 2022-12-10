@@ -2,7 +2,6 @@ package lotto.service;
 
 import camp.nextstep.edu.missionutils.Randoms;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import lotto.domain.Lotto;
 import lotto.domain.LottoTicket;
@@ -49,10 +48,7 @@ public class LottoService {
     }
 
     private Lotto publishLotto() {
-        //오름차순으로 정렬을 하는 것이 맞을까?
-        List<Integer> numbers = Randoms.pickUniqueNumbersInRange(1, 45, 6);
-        Collections.sort(numbers);
-        return new Lotto(numbers);
+        return new Lotto(Randoms.pickUniqueNumbersInRange(1, 45, 6));
     }
 
     public PurchaseAmount getPurchaseAmount() {

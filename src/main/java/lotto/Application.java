@@ -8,3 +8,6 @@ public class Application {
         lottoController.run();
     }
 }
+
+// 예외 처리 어디서 할 지?
+// 오름차순 정렬 stream -> ClassCastException comparable 해결
