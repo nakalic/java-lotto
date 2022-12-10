@@ -1,0 +1,20 @@
+package lotto.domain;
+
+import java.util.List;
+
+public class LottoTicket {
+    private List<Lotto> lottos;
+
+    // 생성자 좀 더 공부할 것
+    // 따로 생성자 안만들어줬는데 되네?
+    public LottoTicket(List<Lotto> publishNumbers) {
+        lottos = publishNumbers;
+    }
+
+    @Override
+    public String toString() {
+        return "LottoTicket{" +
+                "lottos=" + lottos +
+                '}';
+    }
+}
