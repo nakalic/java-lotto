@@ -4,6 +4,7 @@ import java.util.EnumMap;
 import java.util.Map;
 
 public class WinningStatistic {
+    //final 사용 ?
     private Map<Reward, Integer> statistic = new EnumMap<>(Reward.class);
 
     public WinningStatistic() {

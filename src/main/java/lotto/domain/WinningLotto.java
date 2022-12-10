@@ -5,9 +5,9 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class WinningLotto {
-    private Lotto winningNumbers;
+    private final Lotto winningNumbers;
     //한번만 사용할건데 포장해야할까? 오버엔지니어링은 아닐까?
-    private int bonusNumber;
+    private final int bonusNumber;
 
     // List<Integer> winningNumbers, int number 으로 받아야 하나?
     // 검증 책임은 누구한테 ? LottoService? WinningLotto?

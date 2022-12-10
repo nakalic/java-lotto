@@ -1,7 +1,7 @@
 package lotto.domain;
 
 public class LottoNumber {
-    private int number;
+    private final int number;
 
     public LottoNumber(String input) {
         validateLottoNumber(input);

@@ -1,7 +1,7 @@
 package lotto.domain;
 
 public class Yield {
-    private double yield;
+    private final double yield;
 
     public Yield(double yield) {
         this.yield = yield;

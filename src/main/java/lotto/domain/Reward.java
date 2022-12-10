@@ -7,7 +7,7 @@ public enum Reward {
     FOURTH(50000),
     FIFTH(5000);
 
-    private int reward;
+    private final int reward;
 
     Reward(int reward) {
         this.reward = reward;

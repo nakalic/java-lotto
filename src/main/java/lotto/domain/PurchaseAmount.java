@@ -1,7 +1,7 @@
 package lotto.domain;
 
 public class PurchaseAmount {
-    private int money;
+    private final int money;
 
     public PurchaseAmount(String input) {
         validatePurchaseAmount(input);
