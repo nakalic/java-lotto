@@ -13,6 +13,10 @@ public enum Reward {
         this.reward = reward;
     }
 
+    public int getReward() {
+        return reward;
+    }
+
     @Override
     public String toString() {
         return "Reward{" +
