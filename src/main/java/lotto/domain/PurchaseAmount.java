@@ -34,6 +34,10 @@ public class PurchaseAmount {
         }
     }
 
+    public int getMoney() {
+        return money;
+    }
+
     @Override
     public String toString() {
         return "PurchaseAmount{" +
