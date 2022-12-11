@@ -1,5 +1,7 @@
 package lotto.view;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Map.Entry;
 import lotto.domain.Lotto;
 import lotto.domain.LottoTicket;
@@ -30,8 +32,11 @@ public class OutputView {
     public void printLottoTicket(LottoTicket lottoTicket) {
         lottoTicket.getLottos()
                 .stream()
-                .map(Lotto::getNumbers)
-                //오름차순 정렬 하려면 comparable 오버라이딩 해야결
+                .map(lotto -> {
+                    ArrayList<Integer> numbers = new ArrayList<>(lotto.getNumbers());
+                    Collections.sort(numbers);
+                    return numbers;
+                })
                 .forEach(System.out::println);
     }
 
